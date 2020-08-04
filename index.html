@@ -27,8 +27,7 @@
 			<th>Name</th>
 			<th>Age</th>
 			<th>Position</th>
-			<th>Action</th>
-			<th>Action2</th>
+			<th>Actions</th>
 		</tr>
 		 <% _.each(collection, function(model){%>
 		 <tr>
@@ -39,13 +38,11 @@
 			<a href="/#edit/<%=model.empid %>" class="btn btn-primary">Edit</a>
 			<a href="/#delete/<%=model.empid %>" class="btn btn-primary">Delete</a>
 			</td>
-		<td>action7890</td>
 		  </tr>
-		 <%})%>
+	 <%})%>
 		 </table>
 	 
-	 <form action="#">
-	   <input type="text" placeholder="Name" id="empname" />
+	 <form action="#">	   <input type="text" placeholder="Name" id="empname" />
 	   <input type="text" placeholder="Age" id="empage" />
 	   <input type="text" placeholder="Position" id="empposition" />
 	   <button id="addbtn">Add</button>
